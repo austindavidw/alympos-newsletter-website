@@ -24,14 +24,14 @@ function Hero() {
             position: "relative",
           }}
         >
-          <nav class="navbar sticky-sm-top pt-0 bg-transparent">
-            <div class="container m-0">
+          <nav class="navbar sticky-sm-top pt-2 bg-transparent">
+            <div class="container m-1">
               <a class="navbar-brand" href="#">
                 <img
                   src={alymposLogoTransparent}
                   alt="alymposlogotransparent"
-                  width="100vh"
-                  height="75vh"
+                  width="150vh"
+                  height="100vh"
                 />
               </a>
             </div>
