@@ -1,15 +1,17 @@
 {
   "files": {
     "main.css": "/alympos-newsletter-website/static/css/main.c2cab247.css",
-    "main.js": "/alympos-newsletter-website/static/js/main.f06e363f.js",
+    "main.js": "/alympos-newsletter-website/static/js/main.9d6c1a8e.js",
     "static/media/redTopo.png": "/alympos-newsletter-website/static/media/redTopo.037874b963215aa4b97c.png",
+    "static/media/olympiancreditcard.png": "/alympos-newsletter-website/static/media/olympiancreditcard.0c1816e5c83acf962023.png",
+    "static/media/columnwhite.png": "/alympos-newsletter-website/static/media/columnwhite.b454f38cdcdcfe266277.png",
     "static/media/alymposlogo.png": "/alympos-newsletter-website/static/media/alymposlogo.e9521c26a6a0422e3664.png",
     "index.html": "/alympos-newsletter-website/index.html",
     "main.c2cab247.css.map": "/alympos-newsletter-website/static/css/main.c2cab247.css.map",
-    "main.f06e363f.js.map": "/alympos-newsletter-website/static/js/main.f06e363f.js.map"
+    "main.9d6c1a8e.js.map": "/alympos-newsletter-website/static/js/main.9d6c1a8e.js.map"
   },
   "entrypoints": [
     "static/css/main.c2cab247.css",
-    "static/js/main.f06e363f.js"
+    "static/js/main.9d6c1a8e.js"
   ]
 }
