@@ -30,8 +30,8 @@ function Hero() {
                 <img
                   src={alymposLogoTransparent}
                   alt="alymposlogotransparent"
-                  width="120"
-                  height="80"
+                  width="100vh"
+                  height="75vh"
                 />
               </a>
             </div>
@@ -40,7 +40,7 @@ function Hero() {
             className="mask bg-transparent mt-3"
             style={{ backgroundColor: "#070606" }}
           >
-            <div className="d-flex justify-content-center align-items-center h-100 mt-3 ">
+            <div className="d-flex justify-content-center align-items-center h-100 w-100 mt-3 ">
               <div
                 className="text-white sticky-md-top z-1 mt-3 container-fluid"
                 style={{
@@ -52,11 +52,11 @@ function Hero() {
               >
                 <div className="mt-3 row">
                   <h1
-                    className="main-heading col-12"
+                    className="main-heading col-12 display-5 text-body-emphasis"
                     style={{
-                      fontSize: "6em",
                       fontFamily: "Futura-pt, sans-serif",
                       color: "#eeeeee",
+                      fontSize: "7vh",
                     }}
                   >
                     Unleash Your Potential
@@ -65,11 +65,11 @@ function Hero() {
                 <div className="mt-3 row">
                   <h3
                     style={{
-                      fontSize: "2em",
                       fontFamily: "Futura-pt, sans-serif",
                       color: "#eeeeee",
+                      fontSize: "3vh",
                     }}
-                    className="main-subheading col-12 shadow-lg"
+                    className="main-subheading col-12 shadow-lg "
                   >
                     The ultimate premium credit card for every
                   </h3>
@@ -94,11 +94,11 @@ function Hero() {
                     ]}
                     speed={50}
                     style={{
-                      fontSize: "2em",
                       color: "#070606",
                       fontFamily: "Futura-pt, sans-serif",
                       backgroundColor: "gold",
                       fontStyle: "oblique",
+                      fontSize: "4vh",
                     }}
                     repeat={Infinity}
                     className="main-subsubheading fw-bold rounded-2 p-1 shadow-lg"
