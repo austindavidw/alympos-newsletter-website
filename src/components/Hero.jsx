@@ -2,6 +2,8 @@ import React from "react";
 import redTopo from "../assets/redTopo.png";
 import { TypeAnimation } from "react-type-animation";
 import alymposLogoTransparent from "../assets/alymposlogo.png";
+import olympiancreditcard from "../assets/olympiancreditcard.png";
+import columnwhite from "../assets/columnwhite.png";
 
 function Hero() {
   return (
@@ -95,7 +97,7 @@ function Hero() {
                       fontSize: "2em",
                       color: "#070606",
                       fontFamily: "Futura-pt, sans-serif",
-                      backgroundColor: "yellow",
+                      backgroundColor: "gold",
                       fontStyle: "oblique",
                     }}
                     repeat={Infinity}
