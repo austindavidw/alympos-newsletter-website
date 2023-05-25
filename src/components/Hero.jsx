@@ -14,7 +14,7 @@ function Hero() {
           className="p-4 text-center bg-image container-fluid"
           style={{
             backgroundImage: `url(${redTopo})`,
-            height: "90vh",
+            height: "95vh",
 
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -67,37 +67,39 @@ function Hero() {
                       fontFamily: "Futura-pt, sans-serif",
                       color: "#eeeeee",
                     }}
-                    className="main-subheading col-12"
+                    className="main-subheading col-12 shadow-lg"
                   >
                     The ultimate premium credit card for every
                   </h3>
                 </div>
-                <div className="mt-3">
+                <div className="mt-4">
                   <TypeAnimation
                     sequence={[
                       "Sport",
-                      2500,
+                      2000,
                       "Adventure",
-                      2500,
+                      2000,
                       "Challenge",
-                      2500,
+                      2000,
                       "Journey",
-                      2500,
+                      2000,
                       "Summit",
-                      2500,
+                      2000,
                       "Trailblazer",
-                      2500,
+                      2000,
                       "Expedition",
-                      2500,
+                      2000,
                     ]}
                     speed={50}
                     style={{
                       fontSize: "2em",
-                      color: "#eeeeee",
+                      color: "#070606",
                       fontFamily: "Futura-pt, sans-serif",
+                      backgroundColor: "yellow",
+                      fontStyle: "oblique",
                     }}
                     repeat={Infinity}
-                    className="main-subsubheading fw-bold "
+                    className="main-subsubheading fw-bold rounded-2 p-1 shadow-lg"
                   />
                 </div>
               </div>
