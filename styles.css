@@ -7,22 +7,9 @@
   }
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  background-color: #070606;
-}
-
 html,
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0;
-  overflow-x: hidden;
   font-family: "Futura-pt", sans-serif;
-  background-color: #070606;
 }
 
 /* Nav bar section */
@@ -31,35 +18,14 @@ body {
   animation: 1s ease-out 0s 1 slideInTop;
 }
 
-.sideCardsB,
-.sideCardsS,
-.sideCardsG {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
+#intro-example {
+  height: 400px;
 }
 
-.sideCardsB {
-  z-index: 3;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
-}
-
-.sideCardsS {
-  z-index: 2;
-  transform: rotateY(180deg);
-}
-
-.sideCardsG {
-  z-index: 1;
-  transform: rotateY(180deg);
-}
-
-.containerIconMotion:hover .card {
-  transform: rotateY(540deg);
+@media (min-width: 992px) {
+  #intro-example {
+    height: 600px;
+  }
 }
 
 footer {
