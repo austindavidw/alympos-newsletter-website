@@ -11,7 +11,10 @@ function Hero() {
       className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"
       style={{ backgroundColor: "#eeeeee" }}
     >
-      <header className="rounded-5" style={{ backgroundColor: "#070606" }}>
+      <header
+        className="rounded-5 shadow-lg"
+        style={{ backgroundColor: "#070606" }}
+      >
         <div
           className="p-4 text-center bg-image container-fluid"
           style={{
@@ -52,7 +55,7 @@ function Hero() {
               >
                 <div className="mt-3 row">
                   <h1
-                    className="main-heading col-12 display-5 text-body-emphasis"
+                    className="main-heading col-12 display-5 text-body-emphasis fw-bold"
                     style={{
                       fontFamily: "Futura-pt, sans-serif",
                       color: "#eeeeee",
@@ -67,42 +70,41 @@ function Hero() {
                     style={{
                       fontFamily: "Futura-pt, sans-serif",
                       color: "#eeeeee",
-                      fontSize: "3vh",
+                      fontSize: "4vh",
                     }}
                     className="main-subheading col-12 shadow-lg "
                   >
                     The ultimate premium credit card for every
                   </h3>
-                </div>
-                <div className="mt-4">
-                  <TypeAnimation
-                    sequence={[
-                      "Sport",
-                      2000,
-                      "Adventure",
-                      2000,
-                      "Challenge",
-                      2000,
-                      "Journey",
-                      2000,
-                      "Summit",
-                      2000,
-                      "Trailblazer",
-                      2000,
-                      "Expedition",
-                      2000,
-                    ]}
-                    speed={50}
-                    style={{
-                      color: "#070606",
-                      fontFamily: "Futura-pt, sans-serif",
-                      backgroundColor: "gold",
-                      fontStyle: "oblique",
-                      fontSize: "4vh",
-                    }}
-                    repeat={Infinity}
-                    className="main-subsubheading fw-bold rounded-2 p-1 shadow-lg"
-                  />
+                  <h3 className="mt-4">
+                    <TypeAnimation
+                      sequence={[
+                        "Sport",
+                        1500,
+                        "Journey",
+                        1500,
+                        "Trailblazer",
+                        1500,
+                        "Expedition",
+                        1500,
+                        "Challenge",
+                        1500,
+                        "Adventure",
+                        1500,
+                        "Summit",
+                        1500,
+                      ]}
+                      repeat={Infinity}
+                      style={{
+                        backgroundColor: "#eeeeee",
+                        color: "#070606",
+                        fontFamily: "Futura-pt, sans-serif",
+
+                        fontSize: "4vh",
+                      }}
+                      className="rounded-3 p-1 fw-bold fst-italic position-relative"
+                    />
+                  </h3>
                 </div>
               </div>
             </div>
