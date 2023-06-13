@@ -7,9 +7,9 @@
   }
 }
 
-html,
-body {
+html {
   font-family: "Futura-pt", sans-serif;
+  background-color: #eeeeee;
 }
 
 /* Nav bar section */
@@ -26,6 +26,16 @@ body {
   #intro-example {
     height: 600px;
   }
+}
+
+.mainHeading {
+  background: linear-gradient(
+    0deg,
+    rgba(7, 6, 6, 1) 0%,
+    rgba(128, 0, 0, 1) 25%,
+    rgba(238, 238, 238, 1) 100%
+  );
+  font-family: "Futura-pt, sans-serif";
 }
 
 footer {
