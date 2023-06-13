@@ -8,6 +8,7 @@ function Hero() {
         className="px-4 pt-5 mb-5 text-center rounded-5 col-12 "
         style={{
           width: "75vw",
+          height: "80vh",
           backgroundColor: "#070606",
           boxShadow: "5px 5px 75px 1px #303030",
         }}
