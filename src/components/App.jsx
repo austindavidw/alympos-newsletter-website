@@ -10,20 +10,11 @@ import blacktopostretch from "../assets/blacktopostretch.png";
 
 function App() {
   return (
-    <div style={{ backgroundColor: "#070606" }}>
-      <div
-        className="bg-image"
-        style={{
-          backgroundImage: `url(${blacktoporeg})`,
-          height: "100%",
-          width: "100%",
-        }}
-      >
-        <Header />
-        <Hero />
-        <Product />
-        <Footer />
-      </div>
+    <div style={{ backgroundColor: "#181616" }}>
+      <Header />
+      <Hero />
+      <Product />
+      <Footer />
     </div>
   );
 }

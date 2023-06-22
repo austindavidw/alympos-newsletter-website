@@ -5,9 +5,14 @@ import blacktopo from "../assets/blacktopo.png";
 
 function Header() {
   const [click, setClick] = useState(true);
+  const [color, setColor] = useState("#eeeeee");
 
   function handleClick() {
     setClick(!click);
+  }
+
+  function handleColor() {
+    setColor("#800000");
   }
 
   return (
@@ -23,8 +28,8 @@ function Header() {
             <img
               src={alymposLogoTransparent}
               alt="alymposlogotransparent"
-              width={90}
-              height={60}
+              width="90vw"
+              height="60vh"
             />
           </a>
           <div className="container-fluid d-flex justify-content-end">
@@ -40,7 +45,10 @@ function Header() {
                       class="form-control"
                       id="inlineFormInputGroupEmail"
                       placeholder="Email"
-                      style={{ fontFamily: "Futura-pt, sans-serif" }}
+                      style={{
+                        fontFamily: "Futura-pt, sans-serif",
+                        width: "20vw",
+                      }}
                     />
                   </div>
                   <div className="mx-2">
@@ -57,19 +65,19 @@ function Header() {
             </div>
             <p>
               <button
-                class="btn fw-bold rounded-5 d-flex mt-2 px-3"
+                class="btn fw-bold d-flex mt-2 px-3 "
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseWidthExample"
                 data-bs-auto-close="outside"
                 aria-expanded="false"
                 aria-controls="collapseWidthExample"
-                style={{
-                  backgroundColor: "#800000",
-                  color: "#eeeeee",
-                  fontFamily: "Futura-pt, sans-serif",
-                }}
                 onClick={handleClick}
+                style={{
+                  backgroundColor: "#d40000",
+                  color: "White",
+                  border: "#d40000",
+                }}
               >
                 {click ? "Sign Up" : "Close"}
               </button>

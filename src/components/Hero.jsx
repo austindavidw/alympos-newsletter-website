@@ -5,20 +5,17 @@ function Hero() {
   return (
     <div className="justify-content-center d-flex col shadow-lg row pt-5 mt-2">
       <div
-        className="px-4 pt-5 mb-5 text-center rounded-5 col-12 "
+        className="px-4 pt-5 mb-5 text-center overflow-hidden rounded-5 col-12"
         style={{
           width: "75vw",
-          height: "80vh",
+          height: "75vh",
           backgroundColor: "#070606",
           boxShadow: "5px 5px 75px 1px #303030",
         }}
       >
         <h1
           className="display-1 mainHeading fw-bold text-body-emphasis"
-          style={{
-            color: "#eeeeee",
-            fontFamily: "Futura-pt, sans-serif",
-          }}
+          style={{ color: "#eeeeee", fontFamily: "Futura-pt, sans-serif" }}
         >
           Unleash Your Potential
         </h1>
@@ -27,23 +24,24 @@ function Hero() {
             className="lead mb-4 display-5"
             style={{
               fontFamily: "Futura-pt, sans-serif",
-              color: "#eeeeee",
+              background:
+                "linear-gradient(45deg, rgba(255,153,51,1) 25%, rgba(51,136,255,1) 100%)",
+              webkitBackgroundClip: "text",
+              webkitTextFillColor: "transparent",
             }}
           >
             The ultimate premium credit card for every sport
           </h2>
-          <div className="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-            <button className="btn btn-lg"></button>
-          </div>
         </div>
-        <div className="overflow-hidden" style={{ maxHeight: "30vh" }}>
+        <div
+          className=" d-flex justify-content-end"
+          style={{ maxHeight: "39vh" }}
+        >
           <div className="container px-5">
             <img
               src={olympiancardnew}
               alt="olympiancreditcardnew"
               className="img-fluid mb-4"
-              width={700}
-              height={500}
               loading="lazy"
             />
           </div>
@@ -134,4 +132,57 @@ export default Hero;
           </div>
         </div>
       </div> */
+}
+
+{
+  /* <div className="justify-content-center d-flex col shadow-lg row pt-5 mt-2">
+<div
+  className="px-4 pt-5 mb-5 text-center rounded-5 col-12 "
+  style={{
+    width: "75vw",
+    height: "75vh",
+    backgroundColor: "#070606",
+    boxShadow: "5px 5px 75px 1px #303030",
+  }}
+>
+  <h1
+    className="display-1 mainHeading fw-bold text-body-emphasis"
+    style={{
+      color: "#eeeeee",
+      fontFamily: "Futura-pt, sans-serif",
+    }}
+  >
+    Unleash Your Potential
+  </h1>
+  <div className="col-lg-6 mx-auto">
+    <h2
+      className="lead mb-4 display-5"
+      style={{
+        fontFamily: "Futura-pt, sans-serif",
+        color: "#eeeeee",
+      }}
+    >
+      The ultimate premium credit card for every sport
+    </h2>
+    <div className="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+      <button className="btn btn-lg"></button>
+    </div>
+  </div>
+  <div
+    className="overflow-hidden d-flex justify-content-end"
+    style={{ maxHeight: "31vh" }}
+  >
+    <div className="container px-5">
+      <img
+        src={olympiancardnew}
+        alt="olympiancreditcardnew"
+        className="img-fluid mb-4"
+        width="700vw"
+        height="500vh"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</div>
+</div> */
 }
