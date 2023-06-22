@@ -37,7 +37,11 @@ html {
   );
   font-family: "Futura-pt, sans-serif";
 }
-
+.subHeading {
+  background: -webkit-linear-gradient(#eee, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 footer {
   position: absolute;
   text-align: center;
