@@ -5,18 +5,13 @@ import blacktopo from "../assets/blacktopo.png";
 
 function Header() {
   const [click, setClick] = useState(true);
-  const [color, setColor] = useState("#eeeeee");
 
   function handleClick() {
     setClick(!click);
   }
 
-  function handleColor() {
-    setColor("#800000");
-  }
-
   return (
-    <div className="justify-content-center d-flex col mb-0 mt-0 pt-1 border-0 bg-transparent">
+    <div className="justify-content-center d-flex col mb-0 mt-0 pt-1 border-0 bg-transparent sticky-top">
       <div
         className="p-0 p-2 rounded-5 bg-transparent  mt-4"
         style={{

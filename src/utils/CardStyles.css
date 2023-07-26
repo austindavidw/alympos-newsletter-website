@@ -1,0 +1,761 @@
+.section-tiles-grid {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  padding: 200px 0;
+}
+
+@media only screen and (max-width: 1068px) {
+  .section-tiles-grid {
+    padding: 100px 0;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid {
+    padding: 70px 0 120px;
+  }
+}
+html.text-zoom .section-tiles-grid h2 {
+  font-size: 50px;
+}
+html.no-js .section-tiles-grid .tiles-container {
+  grid-template-columns: repeat(2, calc(50% - 5px));
+}
+.section-tiles-grid {
+  background-color: #1d1d1f;
+}
+.section-tiles-grid .section-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  max-width: 1140px;
+}
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid .section-content {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .section-tiles-grid .section-content {
+    padding: 0;
+  }
+}
+.section-tiles-grid .tiles-container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-column-gap: 10px;
+  column-gap: 10px;
+  grid-row-gap: 12px;
+  row-gap: 12px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  grid-column-gap: 24px;
+  column-gap: 24px;
+  grid-row-gap: 24px;
+  row-gap: 24px;
+  max-width: 1069px;
+}
+@media only screen and (max-width: 1068px) {
+  .section-tiles-grid .tiles-container {
+    grid-column-gap: 14px;
+    column-gap: 14px;
+    grid-row-gap: 14px;
+    row-gap: 14px;
+    max-width: 692px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid .tiles-container {
+    max-width: 350px;
+  }
+}
+.section-tiles-grid .tiles-container .tile {
+  min-height: 820px;
+  box-sizing: border-box;
+  min-height: 750px;
+}
+@media only screen and (max-width: 1068px) {
+  .section-tiles-grid .tiles-container .tile {
+    min-height: 500px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid .tiles-container .tile {
+    min-height: 575px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .section-tiles-grid .tiles-container .tile {
+    min-height: 615px;
+  }
+}
+html.text-zoom .section-tiles-grid .tiles-container .tile {
+  min-height: 920px;
+}
+.section-tiles-grid .tiles-container .tile:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: inherit;
+  box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.09);
+}
+.section-tiles-grid .tiles-container .front-face {
+  overflow: hidden;
+}
+.section-tiles-grid .tiles-container .back-face,
+.section-tiles-grid .tiles-container .front-face {
+  background-color: #fff;
+}
+.section-tiles-grid .tiles-container .back-face .content-column {
+  overflow-y: hidden;
+}
+.section-tiles-grid .tiles-container .back-face .content-column-inner {
+  height: 100%;
+}
+.section-tiles-grid
+  .tiles-container
+  .back-face
+  .content-column-inner.no-scroll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-tiles-grid .tiles-container .back-face .content-column-inner.scroll {
+  overflow-y: scroll;
+  padding-right: 15px;
+}
+
+.section-tiles-grid .tiles-container .wallet-app .front-face {
+  background-color: #f2f5f8;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid .tiles-container .wallet-app .front-face {
+    padding: 50px 30px;
+    align-items: flex-start;
+  }
+}
+.section-tiles-grid .tiles-container .wallet-app .front-face .wallet-app-col {
+  display: flex;
+  flex-direction: column;
+}
+.section-tiles-grid
+  .tiles-container
+  .wallet-app
+  .front-face
+  .wallet-app-col
+  .wallet-app-headline {
+  max-width: 368px;
+}
+@media only screen and (max-width: 1068px) {
+  .section-tiles-grid
+    .tiles-container
+    .wallet-app
+    .front-face
+    .wallet-app-col
+    .wallet-app-headline {
+    max-width: 242px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid
+    .tiles-container
+    .wallet-app
+    .front-face
+    .wallet-app-col
+    .wallet-app-headline {
+    max-width: none;
+  }
+}
+.section-tiles-grid
+  .tiles-container
+  .wallet-app
+  .front-face
+  .wallet-app-col
+  picture {
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 1068px) {
+  .section-tiles-grid
+    .tiles-container
+    .wallet-app
+    .front-face
+    .wallet-app-col
+    picture {
+    margin-bottom: 10px;
+  }
+}
+.section-tiles-grid .tiles-container .wallet-app .front-face .wallet-app-phone {
+  margin-right: 94px;
+}
+@media only screen and (max-width: 1068px) {
+  .section-tiles-grid
+    .tiles-container
+    .wallet-app
+    .front-face
+    .wallet-app-phone {
+    margin-right: 40px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid
+    .tiles-container
+    .wallet-app
+    .front-face
+    .wallet-app-phone {
+    margin-right: 0;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+  }
+}
+.section-tiles-grid
+  .tiles-container
+  .wallet-app
+  .front-face
+  .wallet-app-phone
+  picture {
+  display: inline-flex;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid .tiles-container .tile.imessage {
+    min-height: 500px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid .tiles-container .tile.siri {
+    min-height: 550px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid .tiles-container .tile.daily-cash {
+    min-height: 550px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid .tiles-container .tile.give-get {
+    min-height: 500px;
+  }
+}
+.section-tiles-grid
+  .tiles-container
+  .tile.give-get
+  a.typography-tile-backface-link:hover
+  .icon-copy
+  .icon-copy {
+  text-decoration: underline;
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face {
+  background-color: #000;
+}
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid .tiles-container .apple-pay .front-face {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .apple-pay-headline {
+  color: #fff;
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .apple-pay-headline,
+.section-tiles-grid .tiles-container .apple-pay .front-face .apple-pay-logo {
+  display: inline;
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .apple-pay-logo {
+  margin-left: 8px;
+}
+.section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .apple-pay-logo
+  picture {
+  position: relative;
+  top: 10px;
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .apple-pay-text {
+  max-width: 420px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 1068px) {
+  .section-tiles-grid .tiles-container .apple-pay .front-face .apple-pay-text {
+    max-width: 295px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid .tiles-container .apple-pay .front-face .apple-pay-text {
+    max-width: 275px;
+    top: auto;
+    transform: none;
+  }
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .contactless-point {
+  position: absolute;
+  top: 50%;
+  right: 68px;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+@media only screen and (max-width: 1068px) {
+  .section-tiles-grid
+    .tiles-container
+    .apple-pay
+    .front-face
+    .contactless-point {
+    right: 57px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid
+    .tiles-container
+    .apple-pay
+    .front-face
+    .contactless-point {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    right: auto;
+    transform: none;
+    margin: 0 auto;
+  }
+}
+.section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .contactless-reader {
+  position: relative;
+  width: 479px;
+  height: 479px;
+  overflow: hidden;
+  background: #1d1d1f;
+  z-index: 1;
+}
+@media only screen and (max-width: 1068px) {
+  .section-tiles-grid
+    .tiles-container
+    .apple-pay
+    .front-face
+    .contactless-reader {
+    width: 284px;
+    height: 284px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid
+    .tiles-container
+    .apple-pay
+    .front-face
+    .contactless-reader {
+    width: 238px;
+    height: 238px;
+  }
+}
+.section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .overview-contactless-reader {
+  display: flex;
+  border-radius: 70px;
+  overflow: hidden;
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .contactless-ray,
+.section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .contactless-reader {
+  border-radius: 60px;
+}
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid .tiles-container .apple-pay .front-face .contactless-ray,
+  .section-tiles-grid
+    .tiles-container
+    .apple-pay
+    .front-face
+    .contactless-reader {
+    border-radius: 33px;
+  }
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .contactless-ray {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: -1;
+}
+.section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .contactless-ray-10 {
+  width: 122%;
+  height: 122%;
+  background-color: #5cd0e9;
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .contactless-ray-9 {
+  width: 144%;
+  height: 144%;
+  background-color: #60c5e6;
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .contactless-ray-8 {
+  width: 168.5%;
+  height: 168.5%;
+  background-color: #66b2e1;
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .contactless-ray-7 {
+  width: 193%;
+  height: 193%;
+  background-color: #69a8de;
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .contactless-ray-6 {
+  width: 218.5%;
+  height: 218.5%;
+  background-color: #728bd5;
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .contactless-ray-5 {
+  width: 242%;
+  height: 242%;
+  background-color: #787ad0;
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .contactless-ray-4 {
+  width: 266%;
+  height: 266%;
+  background-color: #7c6dcc;
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .contactless-ray-3 {
+  width: 288.5%;
+  height: 288.5%;
+  background-color: #8553db;
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .contactless-ray-2 {
+  width: 310%;
+  height: 310%;
+  background-color: #9a53db;
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .contactless-ray-1 {
+  width: 400%;
+  height: 400%;
+  background-color: #b353db;
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .contactless-phone {
+  height: 842px;
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  z-index: 1;
+}
+@media only screen and (max-width: 1068px) {
+  .section-tiles-grid
+    .tiles-container
+    .apple-pay
+    .front-face
+    .contactless-phone {
+    height: 502px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid
+    .tiles-container
+    .apple-pay
+    .front-face
+    .contactless-phone {
+    height: 418px;
+  }
+}
+@media only screen and (max-width: 1068px) {
+  .section-tiles-grid
+    .tiles-container
+    .apple-pay
+    .front-face
+    .contactless-phone {
+    top: 50px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid
+    .tiles-container
+    .apple-pay
+    .front-face
+    .contactless-phone {
+    top: 40px;
+  }
+}
+.section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .contactless-hardware,
+.section-tiles-grid .tiles-container .apple-pay .front-face .contactless-screen,
+.section-tiles-grid .tiles-container .apple-pay .front-face .video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 1068px) {
+  .section-tiles-grid
+    .tiles-container
+    .apple-pay
+    .front-face
+    .contactless-screen {
+    top: 12px;
+  }
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .contactless-screen,
+.section-tiles-grid .tiles-container .apple-pay .front-face .video-wrapper {
+  top: 19px;
+  z-index: -1;
+}
+@media only screen and (max-width: 1068px) {
+  .section-tiles-grid
+    .tiles-container
+    .apple-pay
+    .front-face
+    .contactless-screen,
+  .section-tiles-grid .tiles-container .apple-pay .front-face .video-wrapper {
+    top: 12px;
+  }
+}
+.section-tiles-grid .tiles-container .apple-pay .front-face .video-wrapper {
+  width: 374px;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+}
+.section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .video-wrapper:not(.loaded):not(.loading-error):not(.loading-disabled)
+  .start-frame {
+  opacity: 1;
+  pointer-events: all;
+}
+.section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .video-wrapper
+  .start-frame {
+  opacity: 0;
+  pointer-events: all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  pointer-events: none;
+}
+.section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .video-wrapper.ended
+  .end-frame {
+  opacity: 1;
+  pointer-events: all;
+}
+.section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .video-wrapper
+  .end-frame {
+  opacity: 0;
+  pointer-events: all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  pointer-events: none;
+}
+@media only screen and (max-width: 1068px) {
+  .section-tiles-grid .tiles-container .apple-pay .front-face .video-wrapper {
+    width: 224px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid .tiles-container .apple-pay .front-face .video-wrapper {
+    width: 186px;
+    object-fit: cover;
+    display: block;
+    width: var(--p-width);
+    height: var(--p-height);
+  }
+}
+@media only screen and (max-width: 734px) and (max-width: 734px) {
+  .section-tiles-grid .tiles-container .apple-pay .front-face .video-wrapper {
+    --p-width: 186px;
+    --p-height: 246px;
+  }
+}
+.section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .video-wrapper
+  video {
+  width: 374px;
+}
+@media only screen and (max-width: 1068px) {
+  .section-tiles-grid
+    .tiles-container
+    .apple-pay
+    .front-face
+    .video-wrapper
+    video {
+    width: 224px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid
+    .tiles-container
+    .apple-pay
+    .front-face
+    .video-wrapper
+    video {
+    width: 186px;
+  }
+}
+.section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .video-wrapper
+  .start-frame {
+  display: block;
+  width: var(--p-width);
+  height: var(--p-height);
+  --p-width: 374px;
+  --p-height: 530px;
+}
+@media only screen and (max-width: 1068px) and (max-width: 1068px) {
+  .section-tiles-grid
+    .tiles-container
+    .apple-pay
+    .front-face
+    .video-wrapper
+    .start-frame {
+    --p-width: 224px;
+    --p-height: 330px;
+  }
+}
+@media only screen and (max-width: 734px) and (max-width: 734px) {
+  .section-tiles-grid
+    .tiles-container
+    .apple-pay
+    .front-face
+    .video-wrapper
+    .start-frame {
+    --p-width: 186px;
+    --p-height: 246px;
+  }
+}
+html.prefers-reduced-motion
+  .section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .video-wrapper
+  .start-frame {
+  display: none;
+}
+html.prefers-reduced-motion
+  .section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .video-wrapper
+  .start-frame.static {
+  display: block;
+}
+.section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .video-wrapper
+  .end-frame {
+  width: 374px;
+}
+@media only screen and (max-width: 1068px) {
+  .section-tiles-grid
+    .tiles-container
+    .apple-pay
+    .front-face
+    .video-wrapper
+    .end-frame {
+    width: 224px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid
+    .tiles-container
+    .apple-pay
+    .front-face
+    .video-wrapper
+    .end-frame {
+    width: 186px;
+  }
+}
+html.prefers-reduced-motion
+  .section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .video-wrapper
+  .end-frame {
+  opacity: 1;
+}
+.section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .video-wrapper
+  .end-frame,
+.section-tiles-grid
+  .tiles-container
+  .apple-pay
+  .front-face
+  .video-wrapper
+  .start-frame {
+  height: auto;
+}
+
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid .tiles-container .tile.security {
+    min-height: 550px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .section-tiles-grid .tiles-container .tile.family {
+    min-height: 550px;
+  }
+}
